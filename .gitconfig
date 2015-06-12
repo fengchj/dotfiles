@@ -1,0 +1,22 @@
+[user]
+	name =  example
+	email = example@gmail.com 
+[core]
+	quotepath = false
+[http]
+	sslVerify = false
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	cp = cherry-pick
+	df = diff
+	unstage = "reset HEAD --"
+	discard = "checkout -- "
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[color]
+	ui = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
